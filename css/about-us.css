@@ -12,3 +12,7 @@ body {
   background: #004758;
   background: linear-gradient(to right, #FFFFFF, #FFFFFF);
 }
+
+.col-sm {
+  padding: 3rem 1.5rem;text-align: center;}
+}
