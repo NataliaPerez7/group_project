@@ -77,8 +77,21 @@ body {
   }
 }
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+
 <head>
 <body>
+
 
 <div class="topnav">
   <a class="active" href="/Users/MeganYoungs1/Desktop/group_project/index.html">Home</a>
@@ -122,5 +135,20 @@ body {
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1>Welcome to the Kids Page!</h1>
+        <h1>Try our quiz and see how much you know about recycling</h1>
       </div>
+
+      <p> 1. How much rubbish that ends up in landfill can actually be recycled? </p>
+      <p> Around 60% </p>
+      <br>
+      <p> 2. How many glass bottles does the average family use each year? </p>
+      <p> 500 bottles </p>
+      <br>
+      <p> 3. On average how many plastic bottles are used per day? </p>
+      <p> 15 million </p>
+      <br>
+      <p> 4. One recycled tin can would save enough energy to power a television for how may hours? </p>
+      <p> 3 hours </p>
+
+      <button id="hide">Hide</button>
+      <button id="show">Show</button>
