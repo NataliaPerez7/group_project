@@ -80,11 +80,14 @@ body {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("#hide").click(function(){
-    $("p").hide();
+  $("#hide").ready(function(){
+    $("p.cities").hide();
   });
   $("#show").click(function(){
-    $("p").show();
+    $("p.cities").show();
+  });
+  $("#hide").click(function(){
+    $("p.cities").hide();
   });
 });
 </script>
@@ -139,16 +142,16 @@ $(document).ready(function(){
       </div>
 
       <p> 1. How much rubbish that ends up in landfill can actually be recycled? </p>
-      <p> Around 60% </p>
+      <p class="cities"> Around 60% </p>
       <br>
       <p> 2. How many glass bottles does the average family use each year? </p>
-      <p> 500 bottles </p>
+      <p class="cities"> 500 bottles </p>
       <br>
       <p> 3. On average how many plastic bottles are used per day? </p>
-      <p> 15 million </p>
+      <p class="cities"> 15 million </p>
       <br>
       <p> 4. One recycled tin can would save enough energy to power a television for how may hours? </p>
-      <p> 3 hours </p>
+      <p class="cities"> 3 hours </p>
 
-      <button id="hide">Hide</button>
-      <button id="show">Show</button>
+      <button id="hide">Hide Answers</button>
+      <button id="show">Show Answers</button>
